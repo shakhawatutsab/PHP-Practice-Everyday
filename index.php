@@ -1,27 +1,21 @@
 <?php
 
-// PHP Variables
-$name = "Shakhawat Hossain Utsab";
-$age = 23;
-$profession = "Developer";
+// PHP Constant
 
-echo "My name is $name and my age is $age and my profession is $profession" ;
+define('name','Shakhawat Hossain Utsab');
 
-echo "</br>";
-echo "</br>";
+echo name,'</br>';
 
-// Variable Scope
+const message = "Hello Const by PHP";
 
-$x =  100;
-$y = 200;
+echo message,'</br>';
+// 
 
-function myTest(){
-	global $x,$y;
+// Magic Constant
+echo "</h2> Example Of: __file__";
+ //print full path of file with .php extension 
+echo __file__.'</br>';
 
-	$y = $x + $y;
-}
+echo "</h3> Exampl Of __dir__";
 
-
-
-myTest();
-echo $y;
+echo __dir__;
